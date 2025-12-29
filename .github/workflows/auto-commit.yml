@@ -20,7 +20,7 @@ jobs:
         run: |
           echo "# Daily Activity Log" > activity.md
           echo "" >> activity.md
-          echo "Last updated: $(date -u)" >> activity.md
+          echo "Last updated: $(TZ=Asia/Kolkata date)" >> activity.md
 
       - name: Commit and push changes
         run: |
